@@ -20,7 +20,7 @@ function setup() {
 
 	//Create the Bodies Here.
 
-	p1 = new Paper(200,100,10);
+	p1 = new Paper(200,100,25);
 	d1 = new Dustbin(700,272,200,15);
 	d2 = new Dustbin(607,230,15,100);
 	d3 = new Dustbin(793,230,15,100);
@@ -45,7 +45,7 @@ function draw() {
 }
 
 function keyPressed(){
-	if(keyCode==="UP_ARROW"){
+	if(keyCode===UP_ARROW){
 		Matter.Body.applyForce(p1.body,p1.body.position,{x:85,y:-85});
 	}
 }
